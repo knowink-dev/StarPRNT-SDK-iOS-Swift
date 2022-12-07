@@ -8,13 +8,11 @@ let package = Package(
     defaultLocalization: "en",
     platforms: [.iOS(.v15)],
     products: [
-        .library(name: "StarIO", targets: ["StarIO"]),
-        .library(name: "StarIO_Extension", targets: ["StarIO_Extension"]),
+        .library(name: "StarPRNT", targets: ["StarIO"]),
     ],
-    dependencies: [],
+    dependencies: [.package(url: "git@github.com:knowink-dev/StarPRNT-SDK-iOS-Swift.git", exact: "1.0.0-starIO-extension")],
     targets: [
         .binaryTarget(name: "StarIO", path: "./SDK/Pods/StarIO/StarIO.xcframework"),
-        .binaryTarget(name: "StarIO_Extension", path: "./SDK/Pods/StarIO_Extension/StarIO_Extension.xcframework"),
     ]
 )
 
