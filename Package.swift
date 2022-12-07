@@ -4,16 +4,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "StarPRNT",
+    name: "StarIO",
     defaultLocalization: "en",
     platforms: [.iOS(.v15)],
     products: [
-        .library(name: "StarPRNT", targets: ["StarIO","StarIO_Extension"]),
+        .library(name: "StarIO", targets: ["StarIO"]),
     ],
     dependencies: [],
     targets: [
         .binaryTarget(name: "StarIO", path: "./SDK/Pods/StarIO/StarIO.xcframework"),
-        .binaryTarget(name: "StarIO_Extension", path: "./SDK/Pods/StarIO_Extension/StarIO_Extension.xcframework"),
     ]
 )
 
