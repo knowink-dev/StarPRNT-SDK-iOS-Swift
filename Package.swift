@@ -9,7 +9,7 @@ let package = Package(
     platforms: [.iOS(.v15)],
     products: [
         .library(name: "StarIO", targets: ["StarIO"]),
-        .library(name: "StarIO_Extension", targets: ["StarIO_Extension]),
+        .library(name: "StarIO_Extension", targets: ["StarIO_Extension"]),
     ],
     dependencies: [],
     targets: [
