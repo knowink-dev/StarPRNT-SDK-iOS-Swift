@@ -8,7 +8,8 @@ let package = Package(
     defaultLocalization: "en",
     platforms: [.iOS(.v15)],
     products: [
-        .library(name: "StarPRNT", targets: ["StarIO","StarIO_Extension"]),
+        .library(name: "StarIO", targets: ["StarIO"]),
+        .library(name: "StarIO_Extension", targets: ["StarIO_Extension]),
     ],
     dependencies: [],
     targets: [
